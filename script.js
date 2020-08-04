@@ -24,7 +24,7 @@ hidefirst();
 
 //Generate Pin
 pinGenerate.addEventListener('click',function(){
-  let pin = Math.ceil(1000 + Math.random() * 9000);
+  let pin = Math.floor(1000 + Math.random() * 9000);
   showPin.value = pin;
   enable();//enable submit Button
   hidefirst();//Hide some display property
